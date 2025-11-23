@@ -28,6 +28,29 @@ __Procedure__:
 6) Coherent demodulation (multiply by synchronized carrier)
 7) Low-pass filter to recover message
 
+__Program__:
+
+```import numpy as np
+import matplotlib.pyplot as plt
+Am = 6.2
+fm = 474
+Ac = 12.4
+fc = 4740
+fs = 47400
+t=np.arange(0, 3/fm, 1/fs)
+m = Am*np.cos(2*3.14*fm*t)
+plt.subplot(3,1,1)
+plt.plot(t,m)
+c = Ac*np.cos (2*3.14*fc*t)
+plt.subplot(3,1,2)
+plt.plot(t,c)
+s1=(Ac+m)*np.cos(2*3.14*fc*t)
+s2=(Ac-m)*np.cos(2*3.14*fc*t)
+s=s1-s2
+plt.subplot(3,1,3)
+plt.plot(t,s)
+```
+
    __Tabulation__:
 
 <img width="1161" height="608" alt="image" src="https://github.com/user-attachments/assets/680e6562-fd00-4de7-ac65-de36f07e7aa8" />
