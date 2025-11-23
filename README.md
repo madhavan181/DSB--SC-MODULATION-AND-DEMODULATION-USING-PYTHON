@@ -30,6 +30,14 @@ __Procedure__:
 
    __Tabulation__:
 
+   <img width="3312" height="2088" alt="image" src="https://github.com/user-attachments/assets/48f6fa56-6bda-4e7c-8fd8-0c2875ef6b1f" />
+
+
    __Output__:
 
+<img width="554" height="413" alt="image" src="https://github.com/user-attachments/assets/79419346-b856-4748-baa0-e7c0c6ddd02c" />
+
    __Result__:
+
+   Thus the DSB-SC-AM Modulation is generated using python and the output is verified.
+   
